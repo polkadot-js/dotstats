@@ -1,6 +1,9 @@
 [workspace]
 members = [
-    "core",
+    "common",
+    "telemetry_core",
+    "telemetry_shard",
+    "test_utils"
 ]
 
 [profile.dev]
@@ -9,3 +12,4 @@ opt-level = 3
 [profile.release]
 lto = true
 panic = "abort"
+# debug = true
